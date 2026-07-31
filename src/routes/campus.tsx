@@ -40,7 +40,7 @@ function CampusPage() {
         title="An architecture"
         italic="that quietly"
         tail="teaches."
-        lede="Our campus is planned around study, rest and clinical rehearsal — from residential hostels and a serious library to the labs and quiet courtyards that make professional education possible."
+        lede="Situated at Kota on NH-66 in Udupi District — a beautiful educational and pilgrimage town near the Arabian Sea and Western Ghats. The campus provides an excellent learning atmosphere for students in health sciences."
         image={campusAerial}
         crumbs={[{ l: "Home", to: "/" }, { l: "Campus" }]}
       />
@@ -57,9 +57,11 @@ function CampusPage() {
                 <span className="italic font-light text-primary">has a rhythm.</span>
               </h2>
               <p className="mt-8 text-[15px] text-muted-foreground leading-[1.9] max-w-md">
-                Mornings begin with clinical postings, the library holds the afternoon,
-                and evenings belong to sport, cultural clubs and quiet study in the
-                hostels. It is a life designed to make healthcare education sustainable.
+                The campus is situated at Kota on NH-66 in Udupi District.
+                Kota is a beautiful educational and pilgrimage town located near
+                the Arabian Sea and the Western Ghats, approximately 20 km from
+                Udupi Railway Station, 10 km from Barkur and Kundapura Railway
+                Stations, and 12 km from Manipal.
               </p>
             </Reveal>
           </div>
@@ -88,12 +90,12 @@ function CampusPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-2">
             {[
-              { icon: HomeIcon, t: "Hostels", d: "Separate residential hostels for men and women with warden supervision." },
-              { icon: Bus, t: "Transport", d: "Dedicated bus routes across town and neighbouring areas." },
-              { icon: Library, t: "Library", d: "Reference sections, current journals and dedicated reading rooms." },
-              { icon: FlaskConical, t: "Laboratories", d: "Simulation, anatomy, pathology and radiography labs." },
-              { icon: Dumbbell, t: "Sports & Recreation", d: "Indoor games, outdoor courts and an active gymnasium." },
-              { icon: Wifi, t: "Connected Campus", d: "Wi-fi enabled classrooms, hostels and study zones." },
+              { icon: HomeIcon, t: "Hostels", d: "Separate residential hostels for men and women with warden supervision and mess facilities." },
+              { icon: Bus, t: "Transport", d: "Dedicated bus routes covering Kota, Udupi and neighbouring areas." },
+              { icon: Library, t: "Library", d: "Well-stocked library with reference sections, current journals and dedicated reading rooms." },
+              { icon: FlaskConical, t: "Laboratories", d: "Fundamental, Nutrition, Community and paramedical labs equipped for practical training." },
+              { icon: Dumbbell, t: "Sports & Recreation", d: "Indoor games, outdoor courts and recreational facilities for student well-being." },
+              { icon: Wifi, t: "Connected Campus", d: "Wi-Fi enabled classrooms, hostels and study zones across the campus." },
             ].map(({ icon: Icon, t, d }, i) => (
               <Reveal key={t} delay={i * 50}>
                 <div className="py-8 border-t border-ink/10 flex items-start gap-5">
@@ -134,10 +136,10 @@ function CampusPage() {
       <section className="bg-background py-20 lg:py-24 border-b border-border">
         <div className="container-x grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { n: 14, s: " acres", l: "Purpose-built campus" },
-            { n: 6, s: "+", l: "Academic blocks" },
+            { n: 20, s: " km", l: "From Udupi Railway Station" },
+            { n: 10, s: " km", l: "From Barkur Railway Station" },
+            { n: 12, s: " km", l: "From Manipal" },
             { n: 2, s: "", l: "Residential hostels" },
-            { n: 8, s: "+", l: "Modern laboratories" },
           ].map((it) => (
             <Reveal key={it.l}>
               <div className="border-t-2 border-accent pt-5">

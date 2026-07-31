@@ -18,22 +18,24 @@ import student1 from "@/assets/teachingatclass.JPG";
 import leader1 from "@/assets/awards.JPG";
 import leader2 from "@/assets/C9250T01.JPG";
 import leader3 from "@/assets/C9300T01.JPG";
+import leader4 from "@/assets/C9385T01.JPG";
+import leader5 from "@/assets/entrence-lordphoto.JPG";
 import logo from "@/assets/ashrithlogo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ashrith Group of Institutions | Nursing, Paramedical & PU Excellence" },
+      { title: "Ashrith Group of Institutions | Study to Serve the Humanity" },
       {
         name: "description",
         content:
-          "Ashrith Trust — a legacy of professional education in Nursing, Paramedical and Pre-University studies. Study to serve the humanity, since 2009.",
+          "Ashrith Trust (R) — Ashrith College of Nursing, Ashrith School of Nursing and K. R. Hegde College of Paramedical Sciences. Study to Serve the Humanity.",
       },
       { property: "og:title", content: "Ashrith Group of Institutions" },
       {
         property: "og:description",
         content:
-          "A legacy of professional education in Nursing, Paramedical and Pre-University studies. Since 2009.",
+          "Ashrith Trust (R) — Nursing and Paramedical education at Kota, Udupi. Study to Serve the Humanity.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -114,7 +116,6 @@ function HomePage() {
       <Legacy />
       <InstitutionOne />
       <InstitutionTwo />
-      <InstitutionThree />
       <Leadership />
       <Programmes />
       <CampusExperience />
@@ -169,23 +170,23 @@ function Hero() {
           <div className="col-span-12 lg:col-span-9 xl:col-span-8">
             <Reveal>
               <div className="text-[11px] uppercase tracking-[0.5em] text-accent font-semibold">
-                Ashrith Group of Institutions
+                Ashrith Group of Institutions · Kota, Udupi
               </div>
             </Reveal>
             <Reveal delay={120}>
               <h1 className="mt-10 font-display font-black tracking-[-0.035em] text-[clamp(3.25rem,10vw,9rem)] leading-[0.9] text-balance">
-                A legacy of
+                Study to
                 <br />
-                <span className="italic font-light text-white/85">study to serve</span>
+                <span className="italic font-light text-white/85">serve</span>
                 <br />
                 the humanity.
               </h1>
             </Reveal>
             <Reveal delay={260}>
               <p className="mt-10 max-w-xl text-[15px] lg:text-[17px] text-white/85 leading-[1.85] text-pretty">
-                For over a decade, Ashrith Trust has shaped compassionate professionals
-                in Nursing, Paramedical Sciences and Pre-University education — rooted
-                in a single conviction:{" "}
+                Ashrith Trust (R) shapes compassionate healthcare professionals
+                through Nursing and Paramedical education — rooted in a single
+                conviction:{" "}
                 <span className="text-white">service, care, heal</span>.
               </p>
             </Reveal>
@@ -270,22 +271,24 @@ function Legacy() {
             <Reveal><SectionMark n="01" label="The Trust · A Chronicle" /></Reveal>
             <Reveal delay={100}>
               <h2 className="mt-8 font-display font-black leading-[0.95] tracking-[-0.03em] text-[clamp(2.5rem,6vw,5rem)] text-ink">
-                Fifteen years<br />
-                <span className="italic font-light text-primary">of quiet, rigorous</span><br />
-                dedication to healing.
+                Developing minds,<br />
+                <span className="italic font-light text-primary">nurturing healers,</span><br />
+                serving humanity.
               </h2>
             </Reveal>
             <Reveal delay={200}>
               <div className="mt-10 grid md:grid-cols-2 gap-10 max-w-3xl">
                 <p className="text-[15px] text-muted-foreground leading-[1.85]">
-                  Ashrith Trust was founded in 2009 by a group of physicians, educators
-                  and community leaders who believed that professional healthcare
-                  education deserved the same seriousness as the vocation itself.
+                  Ashrith Trust (R) endeavours to meet the challenges of today and
+                  tomorrow by focusing on the development of an individual
+                  intellectually, emotionally, physically, socially and spiritually.
+                  Founded by K. R. Hegde and Dr. Vidyadhar Shetty K.
                 </p>
                 <p className="text-[15px] text-muted-foreground leading-[1.85]">
-                  Today, our institutions form a quiet but influential home for
-                  the region's nurses, paramedics and pre-university students —
-                  united by a single philosophy: <em className="text-primary not-italic font-semibold">Service · Care · Heal.</em>
+                  Ashrith College of Nursing, Ashrith School of Nursing and
+                  K. R. Hegde College of Paramedical Sciences are established and
+                  managed by Ashrith Trust (R) — all committed to quality education,
+                  innovation and practical healthcare training.
                 </p>
               </div>
             </Reveal>
@@ -369,7 +372,7 @@ function InstitutionOne() {
   return (
     <section id="institutions" className="bg-background">
       <div className="container-x pt-24 lg:pt-32">
-        <Reveal><SectionMark n="03" label="Our Institutions · Three Schools, One Purpose" /></Reveal>
+        <Reveal><SectionMark n="03" label="Our Institutions · Two Schools, One Purpose" /></Reveal>
       </div>
       <div className="mt-12 grid lg:grid-cols-2 min-h-[80vh]">
         <div className="relative min-h-[420px] lg:min-h-full">
@@ -384,13 +387,14 @@ function InstitutionOne() {
             Ashrith College<br />&amp; School of<br /><span className="italic font-light text-primary">Nursing.</span>
           </h3>
           <p className="mt-8 text-[15px] text-muted-foreground leading-[1.9] max-w-lg">
-            Home to our B.Sc Nursing, GNM and ANM programmes. A curriculum built
-            around structured clinical postings across partner multi-specialty
-            hospitals, modern simulation labs, and a faculty of senior clinicians.
+            Affiliated to Rajiv Gandhi University of Health Sciences (RGUHS) and
+            recognised by the Karnataka Nursing Council. Offering B.Sc Nursing with
+            structured clinical postings, modern laboratories and experienced faculty
+            committed to compassionate care.
           </p>
           <dl className="mt-10 grid grid-cols-2 gap-8 max-w-md border-t border-border pt-8">
-            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Programmes</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">B.Sc · GNM · ANM</dd></div>
-            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Clinical Hours</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">2,500+</dd></div>
+            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Programme</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">B.Sc Nursing</dd></div>
+            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Affiliation</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">RGUHS</dd></div>
           </dl>
           <a href="#programmes" className="mt-12 inline-flex items-center gap-3 text-primary font-semibold text-[12px] uppercase tracking-[0.24em] border-b border-primary/30 pb-1 hover:text-accent hover:border-accent transition self-start">
             View Programmes <ArrowRight className="h-4 w-4" />
@@ -414,13 +418,13 @@ function InstitutionTwo() {
               K.R. Hegde<br />College of<br /><span className="italic font-light text-primary">Paramedical Sciences.</span>
             </h3>
             <p className="mt-8 text-[15px] text-muted-foreground leading-[1.9] max-w-lg">
-              DMLT, D.Pharm and allied health diplomas — training the diagnostic and
-              technical backbone of modern healthcare. Small cohorts, hands-on lab
-              hours, and industry partnerships that lead directly to placement.
+              Offering DMLT, DOTT, DOT and DDT — training the diagnostic and
+              technical backbone of modern healthcare. Hands-on laboratory hours
+              and hospital rotations that lead directly to employment.
             </p>
             <dl className="mt-10 grid grid-cols-2 gap-8 max-w-md border-t border-border pt-8">
-              <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Programmes</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">DMLT · D.Pharm</dd></div>
-              <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Placement Rate</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">95%</dd></div>
+              <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Programmes</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">DMLT · DOTT · DOT · DDT</dd></div>
+              <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Duration</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">2 Years each</dd></div>
             </dl>
             <a href="#programmes" className="mt-12 inline-flex items-center gap-3 text-primary font-semibold text-[12px] uppercase tracking-[0.24em] border-b border-primary/30 pb-1 hover:text-accent hover:border-accent transition self-start">
               View Programmes <ArrowRight className="h-4 w-4" />
@@ -436,46 +440,18 @@ function InstitutionTwo() {
 }
 
 function InstitutionThree() {
-  // Image left · text right — matches InstitutionOne composition for a consistent sequence
-  return (
-    <section className="bg-background">
-      <div className="grid lg:grid-cols-2 min-h-[80vh]">
-        <div className="relative min-h-[420px] lg:min-h-full">
-          <img src={puImg} alt="Ashrith Pre-University College" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-          <div className="absolute top-6 left-6 bg-white/95 backdrop-blur px-5 py-2 text-[11px] uppercase tracking-[0.28em] font-semibold text-primary">
-            PU · Science &amp; Commerce
-          </div>
-        </div>
-        <div className="flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-16 lg:py-24 bg-background">
-          <div className="text-[11px] uppercase tracking-[0.32em] text-accent font-semibold">iii · Pre-University</div>
-          <h3 className="mt-6 font-display font-black leading-[0.95] tracking-[-0.02em] text-[clamp(2rem,4.5vw,3.75rem)] text-ink">
-            Ashrith<br /><span className="italic font-light text-primary">Pre-University</span><br />College.
-          </h3>
-          <p className="mt-8 text-[15px] text-muted-foreground leading-[1.9] max-w-lg">
-            Science and Commerce PU streams with dedicated coaching for CET, NEET
-            and JEE — the launchpad from which most Ashrith students step into
-            their professional degrees.
-          </p>
-          <dl className="mt-10 grid grid-cols-2 gap-8 max-w-md border-t border-border pt-8">
-            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Streams</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">Science · Commerce</dd></div>
-            <div><dt className="text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Duration</dt><dd className="mt-2 font-display font-bold text-2xl text-ink">Two Years</dd></div>
-          </dl>
-          <Link to="/contact" className="mt-12 inline-flex items-center gap-3 text-primary font-semibold text-[12px] uppercase tracking-[0.24em] border-b border-primary/30 pb-1 hover:text-accent hover:border-accent transition self-start">
-            Enquire &amp; Learn More <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+  return null;
 }
 
 
 /* ---------------- Leadership — editorial portrait grid ---------------- */
 function Leadership() {
   const people = [
-    { name: "Sri. K. Ashrith Rao", role: "Chairman & Founder", img: leader1, note: "Founded Ashrith Trust in 2009 with a conviction that professional healthcare education deserves institutional seriousness." },
-    { name: "Smt. Lakshmi Rao", role: "Managing Trustee", img: leader2, note: "Oversees the trust's community engagement, scholarships and student welfare programmes." },
-    { name: "Dr. Prakash Hegde", role: "Director — Academics", img: leader3, note: "A senior physician and educator leading academic rigour across the three institutions." },
+    { name: "K. R. Hegde", role: "Chairman & Managing Trustee", img: leader1, note: "Co-founder of Ashrith Trust (R) and the driving force behind establishing quality healthcare education at Kota, Udupi." },
+    { name: "Dr. Vidyadhar Shetty K.", role: "Director & Trustee", img: leader2, note: "MBBS, DA, PGDHHM. Specialisation in Anaesthesia and Hospital & Health Care Management." },
+    { name: "Dr. Vishwanath Shetty", role: "Trustee", img: leader3, note: "Trustee of Ashrith Trust (R), committed to advancing professional healthcare education in the region." },
+    { name: "Sarojini R. Hegde", role: "Managing Trustee", img: leader4, note: "Managing Trustee of Ashrith Trust (R), overseeing the welfare and development of all institutions." },
+    { name: "Ashrita Hegde", role: "Trustee", img: leader5, note: "Trustee of Ashrith Trust (R), supporting the mission of quality education and student welfare." },
   ];
   return (
     <section className="bg-background py-24 lg:py-40">
@@ -497,7 +473,7 @@ function Leadership() {
           </Reveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-0 md:gap-8 lg:gap-14">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-0 md:gap-8 lg:gap-10">
           {people.map((p, i) => (
             <Reveal key={p.name} delay={i * 120}>
               <figure className={`relative ${i === 1 ? "md:mt-16" : ""} ${i === 2 ? "md:mt-8" : ""}`}>
@@ -575,12 +551,10 @@ function WhyChoose() {
 function Programmes() {
   const list = [
     { cat: "Nursing", title: "B.Sc Nursing", dur: "4 Years", elig: "10+2 PCB · 45%" },
-    { cat: "Nursing", title: "GNM", dur: "3 Years", elig: "10+2 · 40%" },
-    { cat: "Nursing", title: "ANM", dur: "2 Years", elig: "10+2" },
-    { cat: "Paramedical", title: "DMLT — Med. Lab Technology", dur: "2 Years", elig: "10+2 Science" },
-    { cat: "Paramedical", title: "D.Pharm — Pharmacy", dur: "2 Years", elig: "10+2 PCB / PCM" },
-    { cat: "Pre-University", title: "PU — Science (PCMB / PCMC)", dur: "2 Years", elig: "SSLC / 10th Pass" },
-    { cat: "Pre-University", title: "PU — Commerce", dur: "2 Years", elig: "SSLC / 10th Pass" },
+    { cat: "Paramedical", title: "DMLT — Medical Lab Technology", dur: "2 Years", elig: "10+2 Science" },
+    { cat: "Paramedical", title: "DOTT — Operation Theatre Technology", dur: "2 Years", elig: "10+2 Science" },
+    { cat: "Paramedical", title: "DOT — Ophthalmic Technology", dur: "2 Years", elig: "10+2 Science" },
+    { cat: "Paramedical", title: "DDT — Dialysis Technology", dur: "2 Years", elig: "10+2 Science" },
   ];
   return (
     <section id="programmes" className="bg-primary-soft/30 py-24 lg:py-32">
@@ -595,9 +569,9 @@ function Programmes() {
           </Reveal>
           <Reveal delay={120} className="lg:col-span-4">
             <p className="text-[15px] text-muted-foreground leading-[1.85]">
-              From foundational Pre-University to advanced professional degrees —
-              each programme is calibrated for the clinic, the laboratory and the
-              community it serves.
+              From B.Sc Nursing to paramedical diplomas — each programme is
+              calibrated for the clinic, the laboratory and the community it serves.
+              Admissions open for the current academic year.
             </p>
           </Reveal>
         </div>
@@ -636,7 +610,7 @@ function CampusExperience() {
         <Reveal><SectionMark n="07" label="Campus · Grounds & Life" /></Reveal>
         <Reveal delay={100}>
           <h2 className="mt-8 max-w-4xl font-display font-black leading-[0.95] tracking-[-0.03em] text-[clamp(2.25rem,5vw,4.5rem)] text-ink">
-            A campus built to<br /><span className="italic font-light text-primary">inspire and to heal.</span>
+            A campus on NH-66,<br /><span className="italic font-light text-primary">Kota, Udupi District.</span>
           </h2>
         </Reveal>
       </div>
@@ -648,10 +622,10 @@ function CampusExperience() {
         <div className="container-x absolute inset-x-0 bottom-0 pb-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white border-t border-white/25 pt-8">
             {[
-              { k: "50+", v: "Acres of green campus" },
-              { k: "12", v: "Academic blocks" },
-              { k: "24/7", v: "Wi-Fi & security" },
-              { k: "2,500+", v: "Clinical hours / year" },
+              { k: "20 km", v: "From Udupi Railway Station" },
+              { k: "10 km", v: "From Barkur Railway Station" },
+              { k: "12 km", v: "From Manipal" },
+              { k: "NH-66", v: "Kota, Udupi District" },
             ].map((s) => (
               <div key={s.v}>
                 <div className="font-display font-black text-3xl lg:text-5xl text-accent">{s.k}</div>
@@ -964,9 +938,9 @@ function Contact() {
 
           <div className="mt-12 divide-y divide-border border-y border-border">
             {[
-              { icon: MapPin, t: "Address", d: "Ashrith Trust Campus, Karnataka, India" },
-              { icon: Phone, t: "Phone", d: "+91 99999 99999 · +91 88888 88888" },
-              { icon: Mail, t: "Email", d: "info@ashrithtrust.org" },
+              { icon: MapPin, t: "Address", d: "NH-66, Kota, Udupi Taluk & District, Karnataka – 576221" },
+              { icon: Phone, t: "Phone", d: "+91 91480 87860 · +91 91480 87861" },
+              { icon: Mail, t: "Email", d: "info@ashritheducationtrust.org" },
             ].map(({ icon: Icon, t, d }) => (
               <div key={t} className="flex items-start gap-6 py-6">
                 <Icon className="h-5 w-5 text-accent mt-1 shrink-0" />

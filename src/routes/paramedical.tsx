@@ -36,7 +36,7 @@ function ParamedicalPage() {
         title="K.R. Hegde"
         italic="College of"
         tail="Paramedical Sciences."
-        lede="Diploma and degree programmes across medical laboratory technology, radiography, operation theatre and dialysis — taught with the diagnostic seriousness the hospital lab demands."
+        lede="Diploma programmes in Medical Laboratory Technology, Operation Theatre Technology, Ophthalmic Technology and Dialysis Technology — taught with the diagnostic seriousness the hospital lab demands."
         image={paramedicalImg}
         crumbs={[{ l: "Home", to: "/" }, { l: "Paramedical" }]}
       />
@@ -54,10 +54,10 @@ function ParamedicalPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className="mt-10 text-[15px] text-muted-foreground leading-[1.9] max-w-2xl">
-                The K.R. Hegde College of Paramedical Sciences prepares technologists
+                K. R. Hegde College of Paramedical Sciences prepares technologists
                 who anchor modern clinical practice — from the pathology bench to the
-                radiology suite. Programmes combine rigorous theory with genuine
-                hospital-lab immersion.
+                operation theatre. Programmes combine rigorous theory with genuine
+                hospital-lab immersion at Vinaya Hospital and affiliated centres.
               </p>
             </Reveal>
           </div>
@@ -74,19 +74,17 @@ function ParamedicalPage() {
           <Reveal>
             <SectionMark n="02" label="Programmes · Departments" />
             <h2 className="mt-8 font-display font-black leading-[0.95] tracking-[-0.03em] text-[clamp(2rem,4.5vw,3.75rem)] text-ink max-w-3xl">
-              Six departments.
+              Four programmes.
               <span className="italic font-light text-primary"> One diagnostic standard.</span>
             </h2>
           </Reveal>
 
           <div className="mt-16 border-y-2 border-ink">
             {[
-              { t: "DMLT — Medical Lab Technology", d: "Diagnostic pathology, biochemistry, microbiology and haematology.", dur: "2 Years" },
-              { t: "DMRT — Medical Radiography", d: "Conventional radiography, CT and MRI positioning fundamentals.", dur: "2 Years" },
-              { t: "DOT — Operation Theatre Technology", d: "Peri-operative technique, sterilisation and OT assistance.", dur: "2 Years" },
-              { t: "Dialysis Technology", d: "Nephrology unit workflow, machine setup and patient handling.", dur: "2 Years" },
-              { t: "B.Sc MLT", d: "Under-graduate degree with advanced pathology electives.", dur: "3 Years" },
-              { t: "B.Sc Radiography", d: "Advanced imaging modalities and radiation safety.", dur: "3 Years" },
+              { t: "DMLT — Diploma in Medical Laboratory Technology", d: "Diagnostic pathology, biochemistry, microbiology and haematology. Hands-on hospital lab rotations.", dur: "2 Years" },
+              { t: "DOTT — Diploma in Operation Theatre Technology", d: "Peri-operative technique, sterilisation, instrument handling and OT assistance.", dur: "2 Years" },
+              { t: "DOT — Diploma in Ophthalmic Technology", d: "Ophthalmic instruments, refraction, tonometry and assisting in eye surgeries.", dur: "2 Years" },
+              { t: "DDT — Diploma in Dialysis Technology", d: "Nephrology unit workflow, dialysis machine setup and patient care.", dur: "2 Years" },
             ].map((c, i) => (
               <div key={c.t} className="grid grid-cols-2 md:grid-cols-[80px_1fr_180px_120px] gap-4 md:gap-6 py-8 border-b border-border items-center group hover:bg-white/60 transition">
                 <div className="font-mono text-sm text-accent">0{i + 1}</div>
@@ -122,10 +120,10 @@ function ParamedicalPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-14 gap-y-2">
             {[
-              { icon: FlaskConical, t: "Pathology & Biochemistry" },
-              { icon: Microscope, t: "Microbiology & Serology" },
-              { icon: Hospital, t: "Radiology Suite Access" },
-              { icon: Award, t: "Dialysis Unit Rotations" },
+              { icon: FlaskConical, t: "Pathology & Biochemistry Lab" },
+              { icon: Microscope, t: "Microbiology & Serology Lab" },
+              { icon: Hospital, t: "Vinaya Hospital Rotations" },
+              { icon: Award, t: "Dialysis Unit Training" },
             ].map(({ icon: Icon, t }, i) => (
               <Reveal key={t} delay={i * 60}>
                 <div className="py-8 border-t border-white/10 flex items-start gap-4">

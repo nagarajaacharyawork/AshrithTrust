@@ -22,17 +22,17 @@ import { Reveal, SectionMark, Counter } from "@/components/site/primitives";
 export const Route = createFileRoute("/nursing")({
   head: () => ({
     meta: [
-      { title: "Ashrith College & School of Nursing | B.Sc · GNM · ANM" },
+      { title: "Ashrith College & School of Nursing | B.Sc Nursing · RGUHS" },
       {
         name: "description",
         content:
-          "Ashrith College & School of Nursing offers B.Sc, GNM and ANM programmes with structured clinical postings, modern simulation labs and experienced faculty.",
+          "Ashrith College & School of Nursing offers B.Sc Nursing affiliated to RGUHS and recognised by Karnataka Nursing Council. Kota, Udupi.",
       },
       { property: "og:title", content: "Ashrith College & School of Nursing" },
       {
         property: "og:description",
         content:
-          "B.Sc Nursing, GNM and ANM programmes at Ashrith — clinical rigor, compassionate care, real patient exposure.",
+          "B.Sc Nursing affiliated to RGUHS — clinical training, modern labs, compassionate care. Kota, Udupi.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,7 +49,7 @@ function NursingPage() {
         title="Ashrith College"
         italic="& School of"
         tail="Nursing."
-        lede="Home to our B.Sc Nursing, GNM and ANM programmes. A curriculum built around structured clinical postings across partner multi-specialty hospitals, modern simulation labs, and a faculty of senior clinicians."
+        lede="Affiliated to Rajiv Gandhi University of Health Sciences (RGUHS) and recognised by the Karnataka Nursing Council. A curriculum built around structured clinical postings, modern laboratories and a faculty committed to compassionate care."
         image={nursingImg}
         crumbs={[
           { l: "Home", to: "/" },
@@ -86,14 +86,18 @@ function About() {
           <Reveal delay={200}>
             <div className="mt-10 grid md:grid-cols-2 gap-10 max-w-3xl">
               <p className="text-[15px] text-muted-foreground leading-[1.9]">
-                Established in the founding year of the trust, Ashrith College &amp; School of
-                Nursing prepares students for the ward, the ICU and the community — with
-                equal seriousness given to clinical judgement and human compassion.
+                Ashrith College &amp; School of Nursing is affiliated to Rajiv Gandhi
+                University of Health Sciences (RGUHS) and recognised by the Karnataka
+                Nursing Council. We prepare students for the ward, the ICU and the
+                community with equal seriousness given to clinical judgement and
+                human compassion.
               </p>
               <p className="text-[15px] text-muted-foreground leading-[1.9]">
-                Small cohorts, senior clinicians as mentors, and a genuine partnership with
-                multi-specialty hospitals mean every student walks into a ward on day one
-                knowing exactly what to do.
+                Our mission is to teach students to practise ethical values in their
+                personal and professional life while rendering nursing service with
+                humanity. We believe in excellence in the generation and transmission
+                of nursing knowledge through a teaching-learning process shared by
+                faculty and students.
               </p>
             </div>
           </Reveal>
@@ -129,19 +133,7 @@ function Programmes() {
       title: "B.Sc Nursing",
       dur: "4 Years",
       elig: "10+2 PCB · 45%",
-      d: "Under-graduate degree preparing students for hospital, community and specialist nursing.",
-    },
-    {
-      title: "GNM — General Nursing & Midwifery",
-      dur: "3 Years",
-      elig: "10+2 · 40%",
-      d: "Diploma programme with strong midwifery and community health emphasis.",
-    },
-    {
-      title: "ANM — Auxiliary Nurse Midwifery",
-      dur: "2 Years",
-      elig: "10+2",
-      d: "Foundational diploma for community health worker and rural nursing roles.",
+      d: "Affiliated to RGUHS. Candidates must have completed 17 years of age. Physics, Chemistry, Biology and English with minimum 45%.",
     },
   ];
   return (
@@ -154,7 +146,7 @@ function Programmes() {
             </Reveal>
             <Reveal delay={100}>
               <h2 className="mt-8 font-display font-black leading-[0.95] tracking-[-0.03em] text-[clamp(2rem,4.5vw,3.75rem)] text-ink">
-                Three programmes.
+                One programme.
                 <br />
                 <span className="italic font-light text-primary">One standard of care.</span>
               </h2>
@@ -206,12 +198,12 @@ function Programmes() {
 
 function Facilities() {
   const items = [
-    { icon: FlaskConical, t: "Simulation Labs", d: "Manikins, skill stations and OSCE-ready rehearsal spaces." },
-    { icon: Microscope, t: "Anatomy & Physiology Labs", d: "Cadaveric specimens and modern audio-visual dissection setups." },
-    { icon: Hospital, t: "Teaching Hospital Ties", d: "Structured rotations across partnered multi-specialty hospitals." },
-    { icon: Heart, t: "Community Health Field", d: "Rural and urban field postings for public-health experience." },
-    { icon: Users, t: "Tutorial Rooms", d: "Small-group tutorial spaces for clinical case discussion." },
-    { icon: Award, t: "Examination Cell", d: "Dedicated cell coordinating internal and university evaluations." },
+    { icon: FlaskConical, t: "Fundamental Lab", d: "Skill stations and clinical rehearsal spaces for foundational nursing procedures." },
+    { icon: Microscope, t: "Nutrition Lab", d: "Dedicated laboratory for nutrition science and dietary assessment practicals." },
+    { icon: Hospital, t: "Community Lab", d: "Field and community health postings for public-health and rural nursing experience." },
+    { icon: Heart, t: "Clinical Postings", d: "Structured rotations at Vinaya Hospital and affiliated multi-specialty hospitals." },
+    { icon: Users, t: "Tutorial Rooms", d: "Small-group tutorial spaces for clinical case discussion and academic support." },
+    { icon: Award, t: "Examination Cell", d: "Dedicated cell coordinating internal assessments and RGUHS university evaluations." },
   ];
   return (
     <section className="bg-ink text-white py-24 lg:py-32">
@@ -267,9 +259,10 @@ function Clinical() {
               <span className="italic font-light text-primary">the real classroom.</span>
             </h2>
             <p className="mt-8 text-[15px] text-muted-foreground leading-[1.9] max-w-lg">
-              From second year, students rotate through medicine, surgery, obstetrics,
-              paediatrics, psychiatry and community postings — always under the direct
-              supervision of a clinical instructor.
+              Students undertake structured clinical postings at Vinaya Hospital
+              and affiliated multi-specialty hospitals — rotating through medicine,
+              surgery, obstetrics, paediatrics, psychiatry and community health
+              under direct supervision of a clinical instructor.
             </p>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 gap-8">

@@ -60,9 +60,9 @@ function ContactBlock() {
           </Reveal>
           <div className="mt-10 space-y-8">
             {[
-              { icon: MapPin, label: "Campus", value: "Ashrith Group of Institutions,\nKarnataka, India" },
-              { icon: Phone, label: "Phone", value: "+91 00000 00000" },
-              { icon: Mail, label: "Email", value: "admissions@ashrithtrust.org" },
+              { icon: MapPin, label: "Campus", value: "NH-66, Kota,\nUdupi Taluk & District,\nKarnataka – 576221" },
+              { icon: Phone, label: "Phone", value: "+91 91480 87860\n+91 91480 87861" },
+              { icon: Mail, label: "Email", value: "info@ashritheducationtrust.org" },
               { icon: Clock, label: "Office Hours", value: "Mon – Sat · 9:00 AM – 5:00 PM" },
             ].map(({ icon: Icon, label, value }) => (
               <Reveal key={label}>
@@ -141,12 +141,10 @@ function Field({
 
 function Departments() {
   const list = [
-    { t: "Nursing College", p: "+91 00000 00001", e: "nursing@ashrithtrust.org" },
-    { t: "Paramedical Sciences", p: "+91 00000 00002", e: "paramedical@ashrithtrust.org" },
-    { t: "Pre-University College", p: "+91 00000 00003", e: "pu@ashrithtrust.org" },
-    { t: "Hostel & Transport", p: "+91 00000 00004", e: "hostel@ashrithtrust.org" },
-    { t: "Accounts", p: "+91 00000 00005", e: "accounts@ashrithtrust.org" },
-    { t: "Administration", p: "+91 00000 00006", e: "office@ashrithtrust.org" },
+    { t: "Nursing College", p: "+91 91480 87860", e: "info@ashritheducationtrust.org" },
+    { t: "Paramedical Sciences", p: "+91 91480 87861", e: "info@ashritheducationtrust.org" },
+    { t: "Hostel & Transport", p: "+91 91480 87860", e: "info@ashritheducationtrust.org" },
+    { t: "Administration", p: "+91 91480 87861", e: "info@ashritheducationtrust.org" },
   ];
   return (
     <section className="bg-primary-soft/30 py-24 lg:py-32">
@@ -191,7 +189,7 @@ function MapBlock() {
           </div>
           <div className="col-span-12 lg:col-span-4 text-right">
             <a
-              href="https://maps.google.com/?q=Karnataka+India"
+              href="https://maps.google.com/?q=NH-66+Kota+Udupi+Karnataka+576221"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-primary font-semibold text-[12px] uppercase tracking-[0.24em] border-b border-primary/30 pb-1 hover:text-accent hover:border-accent transition"
@@ -204,7 +202,7 @@ function MapBlock() {
       <div className="w-full aspect-[16/7] bg-primary-soft">
         <iframe
           title="Campus location"
-          src="https://www.google.com/maps?q=Karnataka+India&output=embed"
+          src="https://www.google.com/maps?q=Kota+Udupi+Karnataka+576221&output=embed"
           className="w-full h-full border-0 grayscale contrast-[1.05]"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

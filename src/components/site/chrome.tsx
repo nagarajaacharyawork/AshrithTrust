@@ -49,19 +49,19 @@ export function TopBar() {
       <div className="container-x flex items-center justify-between py-2">
         <div className="flex items-center gap-8">
           <span className="flex items-center gap-2">
-            <MapPin className="h-3.5 w-3.5 text-accent" /> Ashrith Trust Campus, Karnataka
+            <MapPin className="h-3.5 w-3.5 text-accent" /> NH-66, Kota, Udupi District – 576221
           </span>
           <a
-            href="mailto:info@ashrithtrust.org"
+            href="mailto:info@ashritheducationtrust.org"
             className="flex items-center gap-2 hover:text-white transition"
           >
-            <Mail className="h-3.5 w-3.5 text-accent" /> info@ashrithtrust.org
+            <Mail className="h-3.5 w-3.5 text-accent" /> info@ashritheducationtrust.org
           </a>
           <a
-            href="tel:+919999999999"
+            href="tel:+919148087860"
             className="flex items-center gap-2 hover:text-white transition"
           >
-            <Phone className="h-3.5 w-3.5 text-accent" /> +91 99999 99999
+            <Phone className="h-3.5 w-3.5 text-accent" /> +91 91480 87860
           </a>
         </div>
         <div className="flex items-center gap-6">
@@ -286,8 +286,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-8 text-[14px] text-white/60 leading-[1.85] max-w-sm">
-            A legacy of professional education — nurturing compassionate healthcare
-            professionals dedicated to service, care and healing.
+            Ashrith Trust (R) — nurturing compassionate healthcare professionals
+            dedicated to service, care and healing. NH-66, Kota, Udupi – 576221.
           </p>
           <div className="mt-8 flex items-center gap-4">
             {[Facebook, Instagram, Youtube].map((Icon, i) => (
